@@ -3,28 +3,21 @@ const experiencia = 5445
 let nivel
 
 if (experiencia < 1000) {
-    nivel = 'Ferro'
+  nivel = 'Ferro'
 } else if (experiencia <= 2000) {
-    nivel = 'Bronze'
+  nivel = 'Bronze'
 } else if (experiencia <= 5000) {
-    nivel = 'Prata'
+  nivel = 'Prata'
 } else if (experiencia <= 7000) {
-    nivel = 'Ouro'
+  nivel = 'Ouro'
 } else if (experiencia <= 8000) {
-    nivel = 'Platina'
+  nivel = 'Platina'
 } else if (experiencia <= 9000) {
-    nivel = 'Ascendente'
+  nivel = 'Ascendente'
 } else if (experiencia <= 10000) {
-    nivel = 'Imortal'
-} else if (experiencia > 10000) {
-    nivel = 'Radiante'
+  nivel = 'Imortal'
 } else {
-    console.log('Valor inválido')
-    return
+  nivel = 'Radiante'
 }
 
-if (typeof(nome) === 'string') {
-    console.log(`O Herói de nome ${nome} está no nivel de ${nivel}`)
-} else {
-    console.log(`'${nome}' não é um nome`)
-}
+console.log(`O Herói de nome ${nome} está no nivel de ${nivel}`)
